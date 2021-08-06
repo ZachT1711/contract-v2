@@ -30,7 +30,7 @@
     "bn.js": "^4.11.8",
     "dotenv": "^7.0.0",
     "ethereumjs-wallet": "^0.6.3",
-    "npm-check-updates": "^3.1.4",
+    "npm-check-updates": "^4.0.0",
     "openzeppelin-solidity": "^2.2.0",
     "truffle": "^5.0.11",
     "truffle-assertions": "^0.8.2",
