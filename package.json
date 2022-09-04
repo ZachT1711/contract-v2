@@ -23,14 +23,16 @@
     "audit": "truffle run verify",
     "docs": "sol-compiler",
     "flat": "truffle-flattener contracts/InstaRegistry.sol > flats/InstaRegistry.sol",
-    "deploy:testnet": "truffle migrate --network kovan"
+    "deploy:testnet": "truffle migrate --network kovan",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@0x/sol-compiler": "^3.1.5",
+    "@0x/sol-compiler": "^4.8.2",
     "bn.js": "^4.11.8",
     "dotenv": "^7.0.0",
     "ethereumjs-wallet": "^0.6.3",
-    "npm-check-updates": "^3.1.4",
+    "npm-check-updates": "^15.0.0",
     "openzeppelin-solidity": "^2.2.0",
     "truffle": "^5.0.11",
     "truffle-assertions": "^0.8.2",
@@ -38,7 +40,8 @@
     "truffle-hdwallet-provider": "^1.0.6",
     "truffle-security": "^1.3.2",
     "web3": "^1.0.0-beta.37",
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -73,5 +76,6 @@
     "prettier-plugin-solidity-refactor": "^1.0.0-alpha.14",
     "solidity-coverage": "0.5.11",
     "solium": "1.2.3"
-  }
+  },
+  "snyk": true
 }
